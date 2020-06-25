@@ -10,46 +10,35 @@
         android:id="@+id/yournameTextview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/sendButton"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/sendButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/receiveButton"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="136dp"
-        android:text="@string/send"
-        app:layout_constraintEnd_toEndOf="@+id/yournameTextview"
-        app:layout_constraintStart_toStartOf="@+id/yournameTextview"
-        app:layout_constraintTop_toBottomOf="@+id/yournameTextview" />
-
-    <Button
-        android:id="@+id/receiveButton"
+        android:id="@+id/wifiOnButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="50dp"
-        android:text="@string/receive"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="@+id/sendButton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/sendButton"
-        app:layout_constraintTop_toBottomOf="@+id/sendButton"
-        app:layout_constraintVertical_bias="0.153" />
+        android:layout_marginTop="144dp"
+        android:text="@string/Wifi_On"
+        app:layout_constraintEnd_toEndOf="@+id/yournameTextview"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/yournameTextview"
+        app:layout_constraintTop_toBottomOf="@+id/yournameTextview" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="608dp" />
+    <ListView
+        android:id="@+id/wifiDevices"
+        android:layout_width="409dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wifiOnButton"
+        app:layout_constraintVertical_bias="0.132" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
