@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AnshMe</string>
+    <string name="your_name_1">Your Name</string>
+    <string name="send">Send</string>
+    <string name="receive">Receive</string>
+    <string name="Welcome">Welcome </string>
+</resources>
