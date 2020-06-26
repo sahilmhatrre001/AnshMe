@@ -7,7 +7,7 @@
     tools:context=".appMainActivity">
 
     <TextView
-        android:id="@+id/yournameTextview"
+        android:id="@+id/statusTextview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -16,29 +16,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/wifiOnButton"
-        android:layout_width="wrap_content"
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="144dp"
-        android:text="@string/Wifi_On"
-        app:layout_constraintEnd_toEndOf="@+id/yournameTextview"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="@+id/yournameTextview"
-        app:layout_constraintTop_toBottomOf="@+id/yournameTextview" />
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="@+id/statusTextview"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/statusTextview"
+        app:layout_constraintTop_toBottomOf="@+id/statusTextview">
+
+        <Button
+            android:id="@+id/wifiOnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Wifi_On"
+            android:layout_marginLeft="50dp"
+            />
+
+        <Button
+            android:id="@+id/discoverButton"
+            android:text="@string/Discover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            />
+
+
+    </TableRow>
 
     <ListView
         android:id="@+id/wifiDevices"
-        android:layout_width="409dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="353dp"
+        android:layout_height="298dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wifiOnButton"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintTop_toBottomOf="@+id/tableRow1" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

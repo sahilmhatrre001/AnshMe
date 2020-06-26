@@ -4,4 +4,7 @@
     <string name="Wifi_On">Turn On Wifi</string>
     <string name="Wifi_Off">Turn Off Wifi</string>
     <string name="Welcome">Welcome </string>
+    <string name="Discover">Discover</string>
+    <string name="Discovery_started">Discover Started 🔍</string>
+    <string name="Discovery_fail">Discover Failed to start ❌</string>
 </resources>
